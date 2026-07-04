@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ZMK: Build all UF2 (Docker)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build-local.sh",
+      "args": [
+        "all"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ZMK: Build left UF2 (Docker)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build-local.sh",
+      "args": [
+        "left"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ZMK: Build right UF2 (Docker)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build-local.sh",
+      "args": [
+        "right"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "ZMK: Build settings reset UF2 (Docker)",
+      "type": "shell",
+      "command": "${workspaceFolder}/scripts/build-local.sh",
+      "args": [
+        "reset"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

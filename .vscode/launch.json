@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ZMK: Build all UF2 (Docker)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "${workspaceFolder}/scripts/build-local.sh all",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "ZMK: Build left UF2 (Docker)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "${workspaceFolder}/scripts/build-local.sh left",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "ZMK: Build right UF2 (Docker)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "${workspaceFolder}/scripts/build-local.sh right",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "ZMK: Build settings reset UF2 (Docker)",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "${workspaceFolder}/scripts/build-local.sh reset",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
