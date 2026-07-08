@@ -1,3 +1,4 @@
+# Disabled locally: rename back to draw.yml to re-enable.
 name: Draw Keymap
 on:
   workflow_dispatch:

@@ -1,3 +1,4 @@
+# Disabled locally: rename back to build.yml to re-enable.
 name: Build ZMK firmware
 on:
   workflow_dispatch:
