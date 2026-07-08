@@ -23,7 +23,7 @@ if [[ ! -d .west ]]; then
 fi
 
 echo "Actualizando ZMK, Zephyr y módulos..."
-if [[ "${SKIP_WEST_UPDATE:-auto}" == "1" ]] || [[ "${SKIP_WEST_UPDATE:-auto}" == "auto" && -d zmk/app && -d zephyr ]]; then
+if [[ "${SKIP_WEST_UPDATE:-auto}" == "1" ]] || [[ "${SKIP_WEST_UPDATE:-auto}" == "auto" && -d zmk/app && -d zephyr && -d zmk-nice-oled ]]; then
     echo "Saltando west update; usando módulos ya descargados."
 else
     west update --fetch-opt=--filter=tree:0
@@ -79,7 +79,7 @@ case "${TARGET}" in
             right \
             "eyelash_corne_right-nice_nano_v2-zmk" \
             nice_nano_v2 \
-            "eyelash_corne_right" \
+            "eyelash_corne_right nice_oled" \
             ""
         ;;
 esac
@@ -90,7 +90,7 @@ case "${TARGET}" in
             left \
             eyelash_corne_studio_left \
             nice_nano_v2 \
-            "eyelash_corne_left" \
+            "eyelash_corne_left nice_oled" \
             studio-rpc-usb-uart \
             -DCONFIG_ZMK_STUDIO=y \
             -DCONFIG_ZMK_STUDIO_LOCKING=n
