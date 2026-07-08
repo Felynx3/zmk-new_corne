@@ -5,3 +5,7 @@ tools/
 .west/
 .zmk-local/
 firmware-local/
+
+
+# MAC
+.DS_Store

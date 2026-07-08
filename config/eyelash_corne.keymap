@@ -167,10 +167,10 @@
         alpha_layer {
             display-name = "ALPHA";
             bindings = <
-&kp ESC     &kp Q     &kp W      &kp E       &kp R       &kp T                     &kp UP                       &kp Y       &kp U         &kp I      &kp O      &kp P      &kp BSPC
-&kp TAB     &kp A     &kp S      &kp D       &lt NUM F   &kp G          &kp LEFT    &kp ENTER     &kp RIGHT    &kp H       &kp J         &kp K      &kp L      &kp SEMI   &kp SQT
-&kp LSHIFT  &kp Z     &kp X      &kp C       &lt FUN V   &kp B          &kp SPACE                &kp DOWN     &kp N       &kp M         &kp COMMA  &kp DOT    &kp SLASH  &kp RSHIFT
-                                   &kp LALT    &kp LGUI    &lt NUM SPACE                                      &lt SYM SPACE  &lt NAV ENTER  &kp RCTRL
+&kp ESC     &kp Q     &kp W      &kp E       &kp R       &kp T                         &kp UP                                      &kp Y          &kp U          &kp I      &kp O      &kp P      &kp BSPC
+&kp TAB     &kp A     &kp S      &kp D       &lt NUM F   &kp G             &kp LEFT    &kp ENTER     &kp RIGHT       &kp H          &kp J          &kp K      &kp L      &kp SEMI   &kp SQT
+&kp LSHIFT  &kp Z     &kp X      &kp C       &lt FUN V   &kp B             &kp SPACE                  &kp DOWN       &kp N          &kp M          &kp COMMA  &kp DOT    &kp SLASH  &kp RSHIFT
+                                   &kp LALT    &kp LGUI       &lt NUM SPACE                                            &lt SYM SPACE  &lt NAV ENTER  &kp RCTRL
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -178,10 +178,10 @@
         num {
             display-name = "NUM";
             bindings = <
-&trans  &kp N1  &kp N2     &kp N3     &kp N4  &kp N5                      &mmv MOVE_UP                         &kp N6  &kp N7  &kp N8  &kp N9     &kp N0     &trans
-&trans  &none   &kp PLUS   &kp ASTRK  &none   &none          &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT  &none   &kp N4  &kp N5  &kp N6     &kp EQUAL  &none
-&trans  &none   &kp MINUS  &kp SLASH  &none   &none          &kp C_MUTE                      &mmv MOVE_DOWN   &none   &kp N1  &kp N2  &kp N3     &kp COMMA  &kp DOT
-                          &trans      &trans  &trans                                                           &trans  &trans  &trans
+&trans  &kp N1  &kp N2     &kp N3     &kp N4  &kp N5                      &mmv MOVE_UP                                      &kp N6  &kp N7  &kp N8  &kp N9     &kp N0     &trans
+&trans  &none   &kp PLUS   &kp ASTRK  &none   &none          &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT       &none   &kp N4  &kp N5  &kp N6     &kp EQUAL  &none
+&trans  &none   &kp MINUS  &kp SLASH  &none   &none          &kp C_MUTE                      &mmv MOVE_DOWN       &none   &kp N1  &kp N2  &kp N3     &kp COMMA  &kp DOT
+                          &trans      &trans  &trans                                                               &trans  &trans  &trans
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -189,10 +189,10 @@
         sym {
             display-name = "SYMBL";
             bindings = <
-&kp PIPE  &kp EXCL   &kp DQT    &kp HASH   &kp DLLR  &kp PRCNT                    &mmv MOVE_UP                         &kp AMPS  &kp SLASH  &kp ASTRK  &kp QMARK  &kp EQUAL  &trans
-&trans    &kp AT     &kp PLUS   &kp ASTRK  &kp LBRC  &kp LBKT       &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT  &kp RBKT  &kp RBRC   &kp MINUS  &kp CARET  &kp COLON  &kp GRAVE
-&trans    &kp TILDE  &kp MINUS  &kp SLASH  &kp LPAR  &kp LT         &trans                          &mmv MOVE_DOWN   &kp GT    &kp RPAR   &kp UNDER  &none      &kp BSLH   &trans
-                               &trans      &trans    &trans                                                           &trans    &trans     &trans
+&kp PIPE  &kp EXCL   &kp DQT    &kp HASH   &kp DLLR  &kp PRCNT                    &mmv MOVE_UP                                      &kp AMPS  &kp SLASH  &kp ASTRK  &kp QMARK  &kp EQUAL  &trans
+&trans    &kp AT     &kp PLUS   &kp ASTRK  &kp LBRC  &kp LBKT       &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT       &kp RBKT  &kp RBRC   &kp MINUS  &kp CARET  &kp COLON  &kp GRAVE
+&trans    &kp TILDE  &kp MINUS  &kp SLASH  &kp LPAR  &kp LT         &trans                          &mmv MOVE_DOWN       &kp GT    &kp RPAR   &kp UNDER  &none      &kp BSLH   &trans
+                               &trans      &trans    &trans                                                               &trans    &trans     &trans
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -200,10 +200,10 @@
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &none  &none  &none  &none  &none                    &mmv MOVE_UP                         &none  &page_up_macro_10    &kp UP  &kp PAGE_UP    &none  &trans
-&trans  &none  &none  &none  &none  &none       &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT  &none  &kp LEFT             &kp DOWN  &kp RIGHT      &none  &none
-&trans  &none  &none  &none  &none  &none       &kp C_MUTE                      &mmv MOVE_DOWN   &none  &page_down_macro_10  &none  &kp PAGE_DOWN  &none  &trans
-                      &trans  &trans  &trans                                                       &trans  &trans               &trans
+&trans  &none  &none  &none  &none  &none                    &mmv MOVE_UP                                      &none  &page_up_macro_10    &kp UP    &kp PAGE_UP    &none  &trans
+&trans  &none  &none  &none  &none  &none       &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT       &none  &kp LEFT             &kp DOWN  &kp RIGHT      &none  &none
+&trans  &none  &none  &none  &none  &none       &kp C_MUTE                      &mmv MOVE_DOWN       &none  &page_down_macro_10  &none     &kp PAGE_DOWN  &none  &trans
+                      &trans  &trans  &trans                                                               &trans  &trans               &trans
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -211,10 +211,10 @@
         fun {
             display-name = "FN";
             bindings = <
-&trans  &none    &none    &none    &none   &none                  &kp UP                       &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
-&trans  &kp F13  &kp F14  &kp F15  &none   &none       &kp LEFT  &kp ENTER     &kp RIGHT  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&trans  &none    &none    &none    &none   &none       &kp SPACE              &kp DOWN   &none  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                            &trans  &trans  &trans                                             &trans  &trans  &trans
+&trans  &none    &none    &none    &none   &none                  &kp UP                                      &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
+&trans  &kp F13  &kp F14  &kp F15  &none   &none       &kp LEFT    &kp ENTER     &kp RIGHT       &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&trans  &none    &none    &none    &none   &none       &kp SPACE                 &kp DOWN       &none  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                            &trans  &trans  &trans                                                        &trans  &trans  &trans
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -222,10 +222,10 @@
         conf {
             display-name = "CONF";
             bindings = <
-&soft_off  &studio_unlock    &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB                  &kp UP                       &bt BT_CLR       &ext_power EP_TOG  &none            &none            &none            &bt BT_CLR_ALL
-&none      &rgb_ug RGB_OFF   &kp C_PREV      &kp C_PLAY    &kp C_NEXT    &rgb_ug RGB_ON     &kp LEFT  &kp ENTER     &kp RIGHT  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none
-&none      &sys_reset        &bootloader     &kp C_BRI_DN  &kp C_BRI_UP  &out OUT_BLE       &kp SPACE              &kp DOWN   &none            &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &none
-                                         &none          &none          &trans                                                        &trans           &none            &none
+&soft_off  &studio_unlock    &kp C_MUTE      &kp C_VOL_DN  &kp C_VOL_UP  &out OUT_USB                  &kp UP                                      &bt BT_CLR       &ext_power EP_TOG  &none            &none            &none            &bt BT_CLR_ALL
+&none      &rgb_ug RGB_OFF   &kp C_PREV      &kp C_PLAY    &kp C_NEXT    &rgb_ug RGB_ON     &kp LEFT  &kp ENTER     &kp RIGHT       &none  &rgb_ug RGB_EFF   &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI
+&none      &sys_reset        &bootloader     &kp C_BRI_DN  &kp C_BRI_UP  &out OUT_BLE       &kp SPACE                 &kp DOWN       &none            &rgb_ug RGB_EFR   &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD
+                                         &none          &none          &trans                                                               &trans           &none            &none
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -233,10 +233,10 @@
         shooter {
             display-name = "FPS";
             bindings = <
-&ht TAB ESC  &kp N1     &kp N2  &kp W     &kp E     &kp R                    &kp UP                       &none  &none  &none  &none  &none  &none
-&kp CAPS     &kp LSHFT  &kp A   &kp S     &kp D     &kp F         &kp LEFT  &kp ENTER     &kp RIGHT  &none  &none  &none  &none  &none  &none
-&ht U T      &kp X      &kp N3  &kp V     &kp G     &kp N5        &kp SPACE              &kp DOWN   &none  &none  &none  &none  &none  &none
-                              &kp Q      &kp LALT  &kp SPACE                                       &none  &none  &none
+&ht TAB ESC  &kp N1     &kp N2  &kp W     &kp E     &kp R                    &kp UP                                      &none  &none  &none  &none  &none  &none
+&kp CAPS     &kp LSHFT  &kp A   &kp S     &kp D     &kp F         &kp LEFT  &kp ENTER     &kp RIGHT       &none  &none  &none  &none  &none  &none
+&ht U T      &kp X      &kp N3  &kp V     &kp G     &kp N5        &kp SPACE                 &kp DOWN       &none  &none  &none  &none  &none  &none
+                              &kp Q      &kp LALT  &kp SPACE                                                     &none  &none  &none
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
@@ -244,10 +244,10 @@
         lol {
             display-name = "LOL";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                   &kp UP                       &none  &none  &none  &none  &none  &none
-&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp G         &kp LEFT  &kp ENTER     &kp RIGHT  &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp C   &kp S   &kp D     &kp F     &kp P         &kp SPACE              &kp DOWN   &none  &none  &none  &none  &none  &none
-                            &kp X     &kp LALT  &kp SPACE                                      &none  &none  &none
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                   &kp UP                                      &none  &none  &none  &none  &none  &none
+&kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp G         &kp LEFT  &kp ENTER     &kp RIGHT       &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp C   &kp S   &kp D     &kp F     &kp P         &kp SPACE                 &kp DOWN       &none  &none  &none  &none  &none  &none
+                            &kp X     &kp LALT  &kp SPACE                                                     &none  &none  &none
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
         };
