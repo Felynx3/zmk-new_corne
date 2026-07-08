@@ -23,7 +23,11 @@ if [[ ! -d .west ]]; then
 fi
 
 echo "Actualizando ZMK, Zephyr y módulos..."
-west update --fetch-opt=--filter=tree:0
+if [[ "${SKIP_WEST_UPDATE:-auto}" == "1" ]] || [[ "${SKIP_WEST_UPDATE:-auto}" == "auto" && -d zmk/app && -d zephyr ]]; then
+    echo "Saltando west update; usando módulos ya descargados."
+else
+    west update --fetch-opt=--filter=tree:0
+fi
 west zephyr-export
 
 build_firmware() {
@@ -35,12 +39,7 @@ build_firmware() {
     shift 5
 
     local build_dir="${BUILD_ROOT}/${id}"
-    local pristine=auto
-
-    # A previous interrupted/failed build can leave an unusable CMake cache.
-    if [[ -d "${build_dir}" && ! -f "${build_dir}/zephyr/zmk.uf2" ]]; then
-        pristine=always
-    fi
+    local pristine=always
 
     local -a command=(
         west build
@@ -78,9 +77,9 @@ case "${TARGET}" in
     all | right)
         build_firmware \
             right \
-            "eyelash_corne_right nice_view-nice_nano_v2-zmk" \
+            "eyelash_corne_right-nice_nano_v2-zmk" \
             nice_nano_v2 \
-            "eyelash_corne_right nice_view" \
+            "eyelash_corne_right" \
             ""
         ;;
 esac
@@ -91,7 +90,7 @@ case "${TARGET}" in
             left \
             eyelash_corne_studio_left \
             nice_nano_v2 \
-            "eyelash_corne_left nice_view" \
+            "eyelash_corne_left" \
             studio-rpc-usb-uart \
             -DCONFIG_ZMK_STUDIO=y \
             -DCONFIG_ZMK_STUDIO_LOCKING=n
