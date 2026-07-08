@@ -187,7 +187,7 @@
         };
 
         sym {
-            display-name = "SYM";
+            display-name = "SYMBL";
             bindings = <
 &kp PIPE  &kp EXCL   &kp DQT    &kp HASH   &kp DLLR  &kp PRCNT                    &mmv MOVE_UP                         &kp AMPS  &kp SLASH  &kp ASTRK  &kp QMARK  &kp EQUAL  &trans
 &trans    &kp AT     &kp PLUS   &kp ASTRK  &kp LBRC  &kp LBKT       &mmv MOVE_LEFT  &mkp LCLK      &mmv MOVE_RIGHT  &kp RBKT  &kp RBRC   &kp MINUS  &kp CARET  &kp COLON  &kp GRAVE
@@ -209,7 +209,7 @@
         };
 
         fun {
-            display-name = "FUN";
+            display-name = "FN";
             bindings = <
 &trans  &none    &none    &none    &none   &none                  &kp UP                       &none  &kp F7  &kp F8  &kp F9  &kp F12  &none
 &trans  &kp F13  &kp F14  &kp F15  &none   &none       &kp LEFT  &kp ENTER     &kp RIGHT  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
@@ -231,7 +231,7 @@
         };
 
         shooter {
-            display-name = "SHOOTER";
+            display-name = "FPS";
             bindings = <
 &ht TAB ESC  &kp N1     &kp N2  &kp W     &kp E     &kp R                    &kp UP                       &none  &none  &none  &none  &none  &none
 &kp CAPS     &kp LSHFT  &kp A   &kp S     &kp D     &kp F         &kp LEFT  &kp ENTER     &kp RIGHT  &none  &none  &none  &none  &none  &none
