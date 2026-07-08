@@ -33,7 +33,7 @@ layers:
   - Z
   - X
   - C
-  - {t: V, h: FUN}
+  - {t: V, h: FN}
   - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBL}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - $$mdi:apple-keyboard-control$$
   NUM:
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYM:
+  SYMBL:
   - '|'
   - '!'
   - '"'
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  FUN:
+  FN:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -294,7 +294,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SHOOTER:
+  FPS:
   - {t: '&ht_tap ESC', h: '$$mdi:keyboard-tab$$'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -395,25 +395,25 @@ layers:
 combos:
 - p: [28, 41]
   k: $$mdi:apple-keyboard-caps$$
-  l: [ALPHA, NUM, SYM, NAV, FUN]
+  l: [ALPHA, NUM, SYMBL, NAV, FN]
 - p: [9, 12]
   k: $$mdi:backspace-reverse-outline$$
-  l: [ALPHA, NUM, SYM, NAV]
+  l: [ALPHA, NUM, SYMBL, NAV]
 - p: [0, 1, 2]
-  k: {t: SHOOTER, h: toggle}
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  k: {t: FPS, h: toggle}
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
 - p: [1, 2, 3]
   k: {t: LOL, h: toggle}
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
 - p: [5, 18, 33]
   k: '&soft_off'
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
 - p: [0, 13, 28]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
 - p: [1, 14, 29]
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
 - p: [2, 15, 30]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  l: [ALPHA, NUM, SYM, NAV, FUN, CONF, SHOOTER, LOL]
+  l: [ALPHA, NUM, SYMBL, NAV, FN, CONF, FPS, LOL]
