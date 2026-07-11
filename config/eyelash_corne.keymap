@@ -21,10 +21,6 @@
 #define SHOOTER 6
 #define LOL 7
 
-&soft_off {
-    hold-time-ms = <2000>;
-};
-
 &lt {
     tapping-term-ms = <130>;
     flavor = "tap-preferred";
