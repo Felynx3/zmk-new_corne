@@ -242,7 +242,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                   &kp UP                                      &none  &none  &none  &none  &none  &none
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp G         &kp LEFT  &kp ENTER     &kp RIGHT       &none  &none  &none  &none  &none  &none
-&kp LCTRL  &kp C   &kp S   &kp D     &kp F     &kp P         &kp SPACE                 &kp DOWN       &none  &none  &none  &none  &none  &none
+&kp LCTRL  &kp C   &kp S   &kp D     &kp F     &lt B P         &kp SPACE                 &kp DOWN       &none  &none  &none  &none  &none  &none
                             &kp X     &kp LALT  &kp SPACE                                                     &none  &none  &none
             >;
             sensor-bindings = <&rsr_arrows &rsr_trans>;
